@@ -252,6 +252,29 @@ typedef enum {
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+- (void)setTintColor:(UIColor *)tintColor {
+    _tintColor = tintColor;
+    _passView.tintColor = tintColor;
+    _inputView.tintColor = tintColor;
+}
+
+- (void)setTextColor:(UIColor *)textColor {
+    _textColor = textColor;
+    _passView.textColor = textColor;
+    _inputView.textColor = textColor;
+}
+
+- (void)setSelectColor:(UIColor *)selectColor {
+    _selectColor = selectColor;
+    _passView.selectColor = selectColor;
+    _inputView.selectColor = selectColor;
+}
+
+- (void)setAlertColor:(UIColor *)alertColor {
+    _alertColor = alertColor;
+    _passView.alertColor = alertColor;
+}
+
 #pragma mark - Public
 
 + (NSString *)MD5String:(NSString *)str {
@@ -267,7 +290,7 @@ typedef enum {
             ];
 }
 
-+ (void)ShowInWindow:(UIWindow *)window :(BOOL)bResetPass {
++ (LockScreenView *)ShowInWindow:(UIWindow *)window :(BOOL)bResetPass {
     @autoreleasepool {
         UIView *view = [window viewWithTag:LockScreenTag];
         if (view) {
@@ -283,13 +306,7 @@ typedef enum {
     if (bResetPass) {
         [lockView ResetPass];
     }
-}
-
-+ (void)BringToFront:(UIWindow *)window {
-    UIView *view = [window viewWithTag:LockScreenTag];
-    if (view) {
-        [window bringSubviewToFront:view];
-    }
+    return lockView;
 }
 
 @end

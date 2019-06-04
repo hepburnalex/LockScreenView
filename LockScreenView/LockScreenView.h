@@ -10,10 +10,14 @@
 
 @interface LockScreenView : UIView
 
+@property (nonatomic, strong) UIColor *textColor;
+@property (nonatomic, strong) UIColor *tintColor;
+@property (nonatomic, strong) UIColor *alertColor;
+@property (nonatomic, strong) UIColor *selectColor;
+
 - (void)ResetPass;
 
-+ (void)BringToFront:(UIWindow *)window;
-+ (void)ShowInWindow:(UIWindow *)window :(BOOL)bResetPass;
++ (LockScreenView *)ShowInWindow:(UIWindow *)window :(BOOL)bResetPass;
 
 #define kMsg_LockScreenHidden @"kMsg_LockScreenHidden"
 
