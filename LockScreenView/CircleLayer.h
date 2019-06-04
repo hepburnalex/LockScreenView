@@ -1,9 +1,9 @@
 //
 //  CircleLayer.h
-//  AppearanceTest
+//  LockScreenView
 //
-//  Created by Kevin Donnelly on 1/10/12.
-//  Copyright (c) 2012 -. All rights reserved.
+//  Created by Hepburn on 2019/5/28.
+//  Copyright © 2019 Hepburn. All rights reserved.
 //
 
 #import <QuartzCore/QuartzCore.h>

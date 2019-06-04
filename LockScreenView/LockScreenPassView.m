@@ -1,6 +1,6 @@
 //
 //  LockScreenPassView.m
-//  ImageShow
+//  LockScreenView
 //
 //  Created by Hepburn on 2019/6/4.
 //  Copyright © 2019 Hepburn. All rights reserved.

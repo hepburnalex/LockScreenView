@@ -1,6 +1,6 @@
 //
 //  LockScreenView.m
-//  TestPixivDown
+//  LockScreenView
 //
 //  Created by Hepburn on 15/1/28.
 //  Copyright (c) 2015年 Hepburn Alex. All rights reserved.

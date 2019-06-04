@@ -1,6 +1,6 @@
 //
 //  LockScreenHeader.h
-//  ImageShow
+//  LockScreenView
 //
 //  Created by Hepburn on 2019/6/3.
 //  Copyright © 2019 Hepburn. All rights reserved.
@@ -20,6 +20,10 @@
 
 #ifndef CGFAF
 #define CGFAF(a) a*(MIN(MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)/320.0, 2.0))
+#endif
+
+#ifndef WS//(weakSelf)
+#define WS(weakSelf)  __weak __typeof (&*self)weakSelf = self
 #endif
 
 #define LockScreenTag   30000

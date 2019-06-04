@@ -1,17 +1,15 @@
 //
-//  KDGoalBarPercentLayer.m
-//  AppearanceTest
+//  CircleLayer.m
+//  LockScreenView
 //
-//  Created by Kevin Donnelly on 1/10/12.
-//  Copyright (c) 2012 -. All rights reserved.
+//  Created by Hepburn on 2019/5/28.
+//  Copyright © 2019 Hepburn. All rights reserved.
 //
 
 #import "CircleLayer.h"
 
 @interface CircleLayer () {
 }
-
-@property (nonatomic, strong) NSDate *mStartTime;
 
 @end
 

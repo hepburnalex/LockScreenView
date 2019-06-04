@@ -1,6 +1,6 @@
 //
 //  LockScreenButton.h
-//  ImageShow
+//  LockScreenView
 //
 //  Created by Hepburn on 2019/5/28.
 //  Copyright © 2019 Hepburn. All rights reserved.
