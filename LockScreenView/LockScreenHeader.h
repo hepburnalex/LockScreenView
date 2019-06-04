@@ -16,6 +16,10 @@
 #define IsiPadUI    (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #endif
 
+#ifndef kStatusBarHeight
+#define kStatusBarHeight    [[UIApplication sharedApplication] statusBarFrame].size.height
+#endif
+
 #ifndef CGFAF
 #define CGFAF(a) a*(MIN(MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)/320.0, 2.0))
 #endif
