@@ -7,8 +7,8 @@
 //
 
 #import "LockScreenPassView.h"
-#import "LockScreenHeader.h"
 #import "LockScreenButton.h"
+#import "LockScreenHeader.h"
 
 #define LockPassCount   4
 

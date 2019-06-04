@@ -8,8 +8,8 @@
 
 #import "LockScreenView.h"
 #import "LockScreenButton.h"
-#import <CommonCrypto/CommonDigest.h>
 #import "LockScreenHeader.h"
+#import <CommonCrypto/CommonDigest.h>
 #import "LockScreenKeyboardView.h"
 #import "LockScreenPassView.h"
 

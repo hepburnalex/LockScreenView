@@ -9,8 +9,6 @@
 #ifndef LockScreenHeader_h
 #define LockScreenHeader_h
 
-#import <Masonry/Masonry.h>
-
 #define kTintColor  [UIColor colorWithRed:0.8 green:0.92 blue:0.76 alpha:1.0]
 #define kRedColor   [UIColor colorWithRed:1.0 green:0.3 blue:0.3 alpha:1.0]
 

@@ -8,6 +8,7 @@
 
 #import "LockScreenKeyboardView.h"
 #import "LockScreenButton.h"
+#import "LockScreenHeader.h"
 
 @implementation LockScreenKeyboardView
 
