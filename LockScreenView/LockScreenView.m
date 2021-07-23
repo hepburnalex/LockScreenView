@@ -57,6 +57,9 @@ typedef enum {
 - (LockScreenKeyboardView *)inputView {
     if (!_inputView) {
         CGFloat fWidth = MIN(self.frame.size.width, self.frame.size.height)*0.7;
+        if (IsiPadUI) {
+            fWidth = fWidth*0.8;
+        }
         CGFloat fHeight = fWidth*1.38;
         _inputView = [[LockScreenKeyboardView alloc] initWithFrame:CGRectMake(0, 0, fWidth, fHeight)];
         WS(weakSelf);
@@ -73,10 +76,10 @@ typedef enum {
 - (UIButton *)backBtn {
     if (!_backBtn) {
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _backBtn.frame = CGRectMake(CGFAF(10), kStatusBarHeight, 40, 40);
+        _backBtn.frame = CGRectMake(CGFAF(10), kStatusBarHeight, CGFAF(40), CGFAF(40));
         [_backBtn setTitle:@"<" forState:UIControlStateNormal];
         [_backBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _backBtn.titleLabel.font = [UIFont fontWithName:@"EuphemiaUCAS" size:20];
+        _backBtn.titleLabel.font = [UIFont fontWithName:@"EuphemiaUCAS" size:CGFAF(20)];
         [_backBtn addTarget:self action:@selector(removeFromSuperview) forControlEvents:UIControlEventTouchUpInside];
         _backBtn.hidden = YES;
         [LockScreenButton CreateCircleLayer:_backBtn :[UIColor yellowColor]];
@@ -87,11 +90,11 @@ typedef enum {
 - (UIButton *)deleteBtn {
     if (!_deleteBtn) {
         _deleteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _deleteBtn.frame = CGRectMake(self.frame.size.width-60, self.frame.size.height-60, 50, 40);
+        _deleteBtn.frame = CGRectMake(self.frame.size.width-CGFAF(60), self.frame.size.height-CGFAF(60), CGFAF(50), CGFAF(40));
         _deleteBtn.autoresizingMask = UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleLeftMargin;
         [_deleteBtn setTitle:@"删除" forState:UIControlStateNormal];
         [_deleteBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _deleteBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+        _deleteBtn.titleLabel.font = [UIFont systemFontOfSize:CGFAF(14)];
         [_deleteBtn addTarget:self action:@selector(OnDelClick) forControlEvents:UIControlEventTouchUpInside];
         _deleteBtn.hidden = YES;
     }
